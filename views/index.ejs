@@ -1,0 +1,36 @@
+<% include partials/header %>
+
+<div class="container">
+ <div class="page-header jumbotron">
+   <div class="container">
+     <h1> List of few important Campgrounds in the world </h1> 
+     <p><a class="btn btn-primary btn-lg" href="/campgrounds/new" role="button">Create a New Camp Ground</a>
+   </div>
+ </div>
+</div>
+
+<div class="container">
+   <div class="row text-center" style="display:flex; flex-wrap: wrap;">
+      <% if(camps.length > 0) { %>
+          <% camps.forEach(function(camp) { %>
+             <div class="col-md-4 col-sm-6">
+              <div class="thumbnail">
+                <img src=<%= camp.image %> >
+                <div class="caption">
+                 <h3 style="text-align: center"> <%= camp.name %> </h3>   
+                </div>
+                <p>
+                 <a class="btn btn-primary" href="/campgrounds/<%= camp._id %>"> More Info </a>
+                </p>
+              </div>
+             </div>
+          <% }); %>
+        <% } else { %>
+            <div class="container">  
+             <div class="alert alert-danger" role="alert">No Camps Found. Please create...</div>
+            </div>
+        <% } %>
+   </div>
+</div>
+
+<% include partials/footer %>

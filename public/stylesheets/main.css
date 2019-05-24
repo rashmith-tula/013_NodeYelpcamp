@@ -1,0 +1,81 @@
+.thumbnail img {
+    width: 100%;
+}
+
+.thumbnail,
+.cgroup {
+    padding: 10px 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+}
+
+.anchor {
+    color: white;
+}
+
+.anchor:hover,
+.anchor:visited {
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.jumbotron {
+    margin: 1% 0;
+}
+
+
+.clink {
+    color: white;
+}
+
+.clink:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.cform {
+    margin: 0 5% 5% 5%;
+    padding: 2% 20%;
+    border: 2px solid #427CAC;
+}
+
+.nform {
+    margin: 0 5% 5% 5%;
+    padding: 2% 5%;
+    border: 2px solid #427CAC;
+}
+
+.ch3 {
+    color: white;
+    margin: 0 5%;
+    background-color: #427CAC;
+}
+
+#cuser {
+    color: white;
+    font-weight: bold;
+}
+
+.deleteCamp {
+    display: inline;
+}
+
+.editButton {
+    height: 30%;
+    font-size: 75%;
+    background: #ffc107;
+    border: 0;
+    border-radius: 8%;
+}
+
+.deleteButton {
+    height: 30%;
+    font-size: 75%;
+    background: #dc3545;
+    border: 0;
+    border-radius: 8%;
+    color: white;
+}
